@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Effect</title>
+   <style>
+   *{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+   }
+   h1{
+		margin:2% 10%;
+		text-transform:uppercase;
+		color:white;
+		text-shadow:3px 3px silver,6px 6px yellow;
+   }
+   .main{
+		width:400px;
+		max-height:400px;
+		margin:6% auto;
+		border:5px solid gray;
+		position:relative;
+		overflow:hidden;
+		
+   }
+   .main img{
+		width:100%;
+		height:auto;
+   }
+   .sub{
+		color:#fff;
+		background:rgba(0,0,0,0.8);
+		position:absolute;
+		left:-100%;
+		top:0;
+		height:100%;
+		width:100%;
+		padding:40px;
+		transition:all 2s;
+   }
+   .main:hover .sub{
+		
+		
+		left:0;
+   
+   
+   }
+   </style>
+</head>
+<body>
+<h1>Image Effect</h1>
+    <div class="main">
+		<img src="flower8.jpg">
+		<div class="sub">
+			<h1>The Rose</h1>
+				<p>
+					This feature is used to slide the image from -
+					<ul>
+						<li>Top - Bottom</li>
+						<li>Left - Right</li>
+						<li>Right - Left</li>
+						<li>Bottom - Top</li>
+				
+					</ul>
+				
+				</p>
+		
+		</div>
+	</div>
+</body>
+</html>
